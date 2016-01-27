@@ -11,7 +11,6 @@ class Dakiksms
     public $message;
     public $xml;
 
-
     function sendRequest()
     {
 

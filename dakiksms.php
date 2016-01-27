@@ -8,7 +8,6 @@ $dakiksms->password = "4888dsdsqq8";
 $dakiksms->sender_title = "TITLE";
 $dakiksms->phone = "5055700909";
 $dakiksms->message = "Bu bir test mesajidir.";
-
 $sms_result = $dakiksms->sendRequest();
 
 if (substr($sms_result, 0, 2) == 'OK') {
