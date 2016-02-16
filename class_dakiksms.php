@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: turalcuneyd@gmail.com
+ * Date: 16.02.2016
+ * Time: 22:57
+ */
+ 
 class Dakiksms
 {
     public $hash;
