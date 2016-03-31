@@ -1,14 +1,8 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: turalcuneyd@gmail.com
- * Date: 16.02.2016
- * Time: 22:57
- */
- 
-class Dakiksms
-{
+namespace SendSms;
+
+class Dakiksms {
     public $hash;
     public $sitename = "http://www.dakiksms.com/api/xml_api.php";
     public $header_type = array('Content-Type: text/xml');
@@ -18,8 +12,7 @@ class Dakiksms
     public $message;
     public $xml;
 
-    function sendRequest()
-    {
+    function sendRequest() {
 
         $this->xml = '<SMS><oturum>
             <kullanici>' . $this->hash . '</kullanici>
@@ -51,5 +44,3 @@ class Dakiksms
     }
 
 }
-
-?>
