@@ -10,7 +10,7 @@ $dakiksms->password = "Qaz99aiCmnKq";
 $dakiksms->sender_title = "TITLE";
 $dakiksms->phone = "5394589978";
 $dakiksms->message = "Bu bir test mesajidir.";
-echo $sms_result = $dakiksms->sendRequest();
+$sms_result = $dakiksms->sendRequest();
 
 if (substr($sms_result, 0, 2) == 'OK') {
     
@@ -21,7 +21,7 @@ if (substr($sms_result, 0, 2) == 'OK') {
     
     //Failed
     echo 'SMS gönderilemedi';
-    
+
 } else {
     // Error
     echo 'Bilinmeyen bir hata oluştu';
